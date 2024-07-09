@@ -1,5 +1,5 @@
 name: deployment
-on:push
+on: push
 
 jobs:
   npm-build:
@@ -11,12 +11,12 @@ jobs:
       uses: actions/checkout@v4
 
     - name: install dependences
-      run：
+      run:
         npm install
         npm run build
         
-   - name: deployment
+    - name: deployment
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: dev
+        branch: ph-pages
         folder: build
