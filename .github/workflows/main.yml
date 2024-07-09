@@ -15,7 +15,7 @@ jobs:
         npm install
         npm run build
         
-    - name: deployment
+    - name: deploymentc:\Users\81809\AppData\Local\Temp\SGPicFaceTpBq\13992\00891ED8.png
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
